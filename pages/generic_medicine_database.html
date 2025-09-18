@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generic Medicine Database - Jeevanspandh | Your Partner In Wellness</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.jpg" />
+    <link rel="icon" href="../public/favicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../public/favicon.jpg" type="image/x-icon" />
+</head>
+<body class="bg-background min-h-screen">
+
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img src="../public/favicon.jpg" alt="icon" class="h-10 w-10" />
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary font-poppins">Jeevanspandh</h1>
+                        <p class="text-xs text-text-secondary">Your Partner In Wellness</p>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="dashboard_homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Dashboard</a>
+                    <a href="symptom_assessment_tool.html" class="text-text-secondary hover:text-primary transition-smooth">Symptoms</a>
+                    <a href="healthcare_provider_directory.html" class="text-text-secondary hover:text-primary transition-smooth">Find Care</a>
+                    <a href="generic_medicine_database.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Medicines</a>
+                    <a href="water_quality_monitor.html" class="text-text-secondary hover:text-primary transition-smooth">Water Quality</a>
+                    <a href="personal_health_profile.html" class="text-text-secondary hover:text-primary transition-smooth">Profile</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="dashboard_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary hover:bg-surface rounded-md transition-smooth">Dashboard</a>
+                <a href="symptom_assessment_tool.html" class="block px-3 py-2 text-text-secondary hover:text-primary hover:bg-surface rounded-md transition-smooth">Symptoms</a>
+                <a href="healthcare_provider_directory.html" class="block px-3 py-2 text-text-secondary hover:text-primary hover:bg-surface rounded-md transition-smooth">Find Care</a>
+                <a href="generic_medicine_database.html" class="block px-3 py-2 text-primary font-semibold bg-primary-50 rounded-md">Medicines</a>
+                <a href="water_quality_monitor.html" class="block px-3 py-2 text-text-secondary hover:text-primary hover:bg-surface rounded-md transition-smooth">Water Quality</a>
+                <a href="personal_health_profile.html" class="block px-3 py-2 text-text-secondary hover:text-primary hover:bg-surface rounded-md transition-smooth">Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <section class="mb-8">
+            <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-6 md:p-8">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+                    <div class="mb-6 lg:mb-0 lg:mr-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                            Generic Medicine Database 💊
+                        </h2>
+                        <p class="text-lg text-text-secondary mb-4">
+                            Save 60-80% on medications with government-approved generic alternatives. 
+                            Find affordable healthcare solutions for your family.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-success-100 px-4 py-2 rounded-lg">
+                                <span class="text-success-600 font-semibold">₹2,50,000+</span>
+                                <span class="text-success-700 text-sm ml-2">Saved by users this month</span>
+                            </div>
+                            <div class="bg-primary-100 px-4 py-2 rounded-lg">
+                                <span class="text-primary font-semibold">5,000+</span>
+                                <span class="text-primary-700 text-sm ml-2">Generic medicines available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Generic medicines and healthcare" class="w-64 h-48 object-cover rounded-xl shadow-strong" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-text-primary mb-6">Find Generic Alternatives</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <div class="lg:col-span-2">
+                        <div class="relative">
+                            <input type="text" id="medicine-search" placeholder="Search by brand name, generic name, or medical condition..." class="input-field pr-12" />
+                            <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-primary hover:text-primary-700">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="text-sm text-text-secondary">Popular searches:</span>
+                            <button class="text-sm text-primary hover:text-primary-700 underline" onclick="searchMedicine('Paracetamol')">Paracetamol</button>
+                            <button class="text-sm text-primary hover:text-primary-700 underline" onclick="searchMedicine('Diabetes')">Diabetes</button>
+                            <button class="text-sm text-primary hover:text-primary-700 underline" onclick="searchMedicine('Blood Pressure')">Blood Pressure</button>
+                            <button class="text-sm text-primary hover:text-primary-700 underline" onclick="searchMedicine('Antibiotics')">Antibiotics</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-accent-50 p-4 rounded-lg border border-accent-100">
+                        <h4 class="font-semibold text-accent-800 mb-2">Upload Prescription</h4>
+                        <p class="text-sm text-accent-700 mb-3">Get generic alternatives for your prescribed medicines</p>
+                        <button class="w-full bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-accent-600 transition-smooth">
+                            📷 Upload Photo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card hover:shadow-strong group cursor-pointer" onclick="showSavingsCalculator()">
+                    <div class="text-center">
+                        <div class="bg-success-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 group-hover:bg-success-200 transition-smooth">
+                            <svg class="h-8 w-8 text-success-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zM14 6a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h6zM4 14a2 2 0 002 2h8a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Savings Calculator</h4>
+                        <p class="text-sm text-text-secondary">Calculate annual savings</p>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong group cursor-pointer" onclick="findPharmacies()">
+                    <div class="text-center">
+                        <div class="bg-primary-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 group-hover:bg-primary-200 transition-smooth">
+                            <svg class="h-8 w-8 text-primary mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Find Pharmacies</h4>
+                        <p class="text-sm text-text-secondary">Jan Aushadhi & nearby stores</p>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong group cursor-pointer" onclick="setReminders()">
+                    <div class="text-center">
+                        <div class="bg-accent-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 group-hover:bg-accent-200 transition-smooth">
+                            <svg class="h-8 w-8 text-accent mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Set Reminders</h4>
+                        <p class="text-sm text-text-secondary">Medication & refill alerts</p>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong group cursor-pointer" onclick="manageFamilyMeds()">
+                    <div class="text-center">
+                        <div class="bg-secondary-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 group-hover:bg-secondary-200 transition-smooth">
+                            <svg class="h-8 w-8 text-secondary mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Family Medicines</h4>
+                        <p class="text-sm text-text-secondary">Manage for family members</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-semibold text-text-primary">Popular Generic Medicines</h3>
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center space-x-2 text-text-secondary hover:text-primary transition-smooth">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"/>
+                        </svg>
+                        <span class="text-sm">Filter</span>
+                    </button>
+                    <select class="text-sm border border-border rounded-lg px-3 py-2 focus:ring-2 focus:ring-primary-200 focus:border-primary outline-none">
+                        <option>Sort by Savings</option>
+                        <option>Sort by Name</option>
+                        <option>Sort by Popularity</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <div class="card hover:shadow-strong transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-text-primary mb-1">Paracetamol 500mg</h4>
+                            <p class="text-sm text-text-secondary mb-2">Generic for Crocin, Dolo 650</p>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Government Approved</span>
+                                <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-medium">Bioequivalent</span>
+                            </div>
+                        </div>
+                        <img src="https://images.pixabay.com/photo/2017/03/22/17/39/pills-2166667_1280.jpg" alt="Paracetamol tablets" class="w-16 h-16 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center p-3 bg-error-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Brand Price</p>
+                            <p class="text-lg font-bold text-error-600">₹45</p>
+                        </div>
+                        <div class="text-center p-3 bg-success-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Generic Price</p>
+                            <p class="text-lg font-bold text-success-600">₹8</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-success-50 p-3 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-success-700 font-semibold">You Save: ₹37 (82%)</span>
+                            <span class="text-xs text-success-600">Per strip of 10 tablets</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-smooth">
+                            Find Nearby
+                        </button>
+                        <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-text-primary mb-1">Metformin 500mg</h4>
+                            <p class="text-sm text-text-secondary mb-2">Generic for Glycomet, Glucophage</p>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Government Approved</span>
+                                <span class="bg-warning-100 text-warning-600 px-2 py-1 rounded text-xs font-medium">Prescription Required</span>
+                            </div>
+                        </div>
+                        <img src="https://images.pexels.com/photos/3683051/pexels-photo-3683051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Metformin tablets" class="w-16 h-16 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center p-3 bg-error-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Brand Price</p>
+                            <p class="text-lg font-bold text-error-600">₹120</p>
+                        </div>
+                        <div class="text-center p-3 bg-success-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Generic Price</p>
+                            <p class="text-lg font-bold text-success-600">₹25</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-success-50 p-3 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-success-700 font-semibold">You Save: ₹95 (79%)</span>
+                            <span class="text-xs text-success-600">Per strip of 10 tablets</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-smooth">
+                            Find Nearby
+                        </button>
+                        <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-text-primary mb-1">Amlodipine 5mg</h4>
+                            <p class="text-sm text-text-secondary mb-2">Generic for Amlong, Norvasc</p>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Government Approved</span>
+                                <span class="bg-warning-100 text-warning-600 px-2 py-1 rounded text-xs font-medium">Prescription Required</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Amlodipine tablets" class="w-16 h-16 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center p-3 bg-error-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Brand Price</p>
+                            <p class="text-lg font-bold text-error-600">₹85</p>
+                        </div>
+                        <div class="text-center p-3 bg-success-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Generic Price</p>
+                            <p class="text-lg font-bold text-success-600">₹18</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-success-50 p-3 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-success-700 font-semibold">You Save: ₹67 (79%)</span>
+                            <span class="text-xs text-success-600">Per strip of 10 tablets</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-smooth">
+                            Find Nearby
+                        </button>
+                        <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth">
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-strong transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-text-primary mb-1">Omeprazole 20mg</h4>
+                            <p class="text-sm text-text-secondary mb-2">Generic for Omez, Prilosec</p>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Government Approved</span>
+                                <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs font-medium">OTC Available</span>
+                            </div>
+                        </div>
+                        <img src="https://images.pixabay.com/photo/2016/12/06/14/33/medicine-1886760_1280.jpg" alt="Omeprazole capsules" class="w-16 h-16 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center p-3 bg-error-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Brand Price</p>
+                            <p class="text-lg font-bold text-error-600">₹95</p>
+                        </div>
+                        <div class="text-center p-3 bg-success-50 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">Generic Price</p>
+                            <p class="text-lg font-bold text-success-600">₹22</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-success-50 p-3 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-success-700 font-semibold">You Save: ₹73 (77%)</span>
+                            <span class="text-xs text-success-600">Per strip of 10 capsules</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-smooth">
+                            Find Nearby
+                        </button>
+                        <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-smooth">
+                    Load More Medicines
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="card">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-semibold text-text-primary">Nearby Jan Aushadhi Stores</h3>
+                    <a href="javascript:void(0)" class="text-primary hover:text-primary-700 text-sm font-medium">View All Stores</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border border-border rounded-lg p-4 hover:shadow-subtle transition-smooth">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Jan Aushadhi Store - Connaught Place</h4>
+                                <p class="text-sm text-text-secondary">Block A, Connaught Place, New Delhi</p>
+                            </div>
+                            <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Open</span>
+                        </div>
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary mb-3">
+                            <span>📍 1.2 km away</span>
+                            <span>⏰ Open till 9:00 PM</span>
+                            <span>📞 +91-11-2334-5678</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-smooth">
+                                Get Directions
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth text-sm">
+                                Call Store
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-4 hover:shadow-subtle transition-smooth">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h4 class="font-semibold text-text-primary">Jan Aushadhi Store - Karol Bagh</h4>
+                                <p class="text-sm text-text-secondary">Main Market, Karol Bagh, New Delhi</p>
+                            </div>
+                            <span class="bg-success-100 text-success-600 px-2 py-1 rounded text-xs font-medium">Open</span>
+                        </div>
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary mb-3">
+                            <span>📍 2.8 km away</span>
+                            <span>⏰ Open till 8:30 PM</span>
+                            <span>📞 +91-11-2575-9012</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <button class="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-smooth">
+                                Get Directions
+                            </button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-text-secondary hover:text-primary hover:border-primary transition-smooth text-sm">
+                                Call Store
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-text-primary mb-6">Government Healthcare Benefits</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-success-50 p-4 rounded-lg border border-success-100">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-success-100 rounded-full p-2 flex-shrink-0">
+                                <svg class="h-5 w-5 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-success-800 mb-2">Jan Aushadhi Scheme</h4>
+                                <p class="text-sm text-success-700 mb-3">Access to 1,400+ generic medicines at 50-90% lower prices through government stores nationwide.</p>
+                                <button class="text-success-600 hover:text-success-700 text-sm font-medium">
+                                    Find Nearest Store →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-primary-50 p-4 rounded-lg border border-primary-100">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-primary-100 rounded-full p-2 flex-shrink-0">
+                                <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zM14 6a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h6z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-800 mb-2">Ayushman Bharat</h4>
+                                <p class="text-sm text-primary-700 mb-3">₹5 lakh annual coverage for hospitalization including free medicines during treatment.</p>
+                                <button class="text-primary-600 hover:text-primary-700 text-sm font-medium">
+                                    Check Eligibility →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 8v24M8 20h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        </svg>
+                        <div class="ml-3">
+                            <h3 class="text-lg font-bold text-primary font-poppins">Jeevanspandh</h3>
+                            <p class="text-sm text-text-secondary">Your Partner In Wellness</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Empowering communities with accessible healthcare through government integration and digital innovation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="symptom_assessment_tool.html" class="text-text-secondary hover:text-primary transition-smooth">Symptom Checker</a></li>
+                        <li><a href="healthcare_provider_directory.html" class="text-text-secondary hover:text-primary transition-smooth">Find Doctors</a></li>
+                        <li><a href="generic_medicine_database.html" class="text-text-secondary hover:text-primary transition-smooth">Medicines</a></li>
+                        <li><a href="water_quality_monitor.html" class="text-text-secondary hover:text-primary transition-smooth">Water Quality</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3">Emergency</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="text-error-600 font-semibold">Emergency: 108</li>
+                        <li class="text-text-secondary">Ambulance: 102</li>
+                        <li class="text-text-secondary">Police: 100</li>
+                        <li class="text-text-secondary">Fire: 101</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-border mt-8 pt-8 text-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 Jeevanspandh. All Rights Reserved. | A Government of India Healthcare Initiative
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="savings-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-6 w-full max-w-md">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-text-primary">Annual Savings Calculator</h3>
+                <button onclick="closeSavingsCalculator()" class="text-text-secondary hover:text-text-primary">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-text-primary mb-2">Monthly Medicine Cost (Brand)</label>
+                    <input type="number" id="monthly-cost" placeholder="Enter amount in ₹" class="input-field" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-text-primary mb-2">Expected Generic Savings (%)</label>
+                    <select id="savings-percentage" class="input-field">
+                        <option value="70">70% - Average Savings</option>
+                        <option value="60">60% - Conservative</option>
+                        <option value="80">80% - High Savings</option>
+                    </select>
+                </div>
+                <div id="savings-result" class="bg-success-50 p-4 rounded-lg hidden">
+                    <h4 class="font-semibold text-success-800 mb-2">Your Potential Savings</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-success-700">Monthly Savings:</span>
+                            <span class="font-semibold text-success-800" id="monthly-savings">₹0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-success-700">Annual Savings:</span>
+                            <span class="font-semibold text-success-800" id="annual-savings">₹0</span>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="calculateSavings()" class="w-full bg-primary text-white px-4 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-smooth">
+                    Calculate Savings
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const button = event.target.closest('button');
+
+            if (!menu.contains(event.target) && !button) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        function searchMedicine(term) {
+            document.getElementById('medicine-search').value = term;
+
+            console.log('Searching for:', term);
+        }
+
+        function showSavingsCalculator() {
+            document.getElementById('savings-modal').classList.remove('hidden');
+        }
+
+        function closeSavingsCalculator() {
+            document.getElementById('savings-modal').classList.add('hidden');
+            document.getElementById('savings-result').classList.add('hidden');
+        }
+
+        function calculateSavings() {
+            const monthlyCost = parseFloat(document.getElementById('monthly-cost').value);
+            const savingsPercentage = parseFloat(document.getElementById('savings-percentage').value);
+
+            if (monthlyCost && savingsPercentage) {
+                const monthlySavings = (monthlyCost * savingsPercentage) / 100;
+                const annualSavings = monthlySavings * 12;
+
+                document.getElementById('monthly-savings').textContent = `₹${monthlySavings.toLocaleString('en-IN')}`;
+                document.getElementById('annual-savings').textContent = `₹${annualSavings.toLocaleString('en-IN')}`;
+                document.getElementById('savings-result').classList.remove('hidden');
+            }
+        }
+
+        function findPharmacies() {
+            alert('Finding nearby pharmacies with generic medicines...');
+        }
+
+        function setReminders() {
+            alert('Setting up medication reminders...');
+        }
+
+        function manageFamilyMeds() {
+            alert('Opening family medicine management...');
+        }
+
+        document.getElementById('medicine-search').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value;
+                console.log('Searching for:', searchTerm);
+
+            }
+        });
+
+        document.getElementById('savings-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSavingsCalculator();
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
