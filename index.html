@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeevanspandh - Your Partner In Wellness</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Centered logo */
+        .logo-img {
+            display: block;
+            margin: 0 auto 15px;  /* centers and adds spacing below */
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;   /* makes it circular */
+            border: 3px solid #667eea; /* nice border to match theme */
+        }
+        
+        .logo {
+            font-size: 2.2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .redirect-message {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        
+        .manual-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        
+        .manual-link:hover {
+            background: #5a6fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <!-- Centered Logo -->
+        <img src="public/favicon.jpg" alt="Jeevanspandh Logo" class="logo-img" />
+        <div class="logo">Jeevanspandh</div>
+
+        <div class="loading-spinner"></div>
+        <div class="redirect-message">
+            Redirecting to Dashboard...
+        </div>
+        <a href="pages/dashboard_homepage.html" class="manual-link">
+            Continue to Dashboard
+        </a>
+    </div>
+
+    <script>
+        // Auto-redirect to dashboard after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/dashboard_homepage.html';
+        }, 3000);
+        
+        // Fallback redirect on page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+                    window.location.href = 'pages/dashboard_homepage.html';
+                }
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
